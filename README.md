@@ -47,3 +47,10 @@ Bin calc
 * 7шт * npn transistors (КТ3102А, BC546, BC547 )
 * 7шт * 1000 Ом
 * 24шт * 180 ОМ
+
+## Notes
+
+### Input buttons
+
+http://www.openmusiclabs.com/learning/digital/input-scanning-matrix/shift-brigade/
+http://www.learningaboutelectronics.com/images/74HC165-register-pinout.png

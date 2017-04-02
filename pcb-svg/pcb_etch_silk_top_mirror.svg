@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="8.90476in" height="5.16654in" viewBox="0 0 641.143 371.991"  version="1.2" xmlns:svg="http://www.w3.org/2000/svg" baseProfile="tiny" y="0in" x="0in">
+ <g transform="matrix(-1, 0, 0, 1, 641.143, 0)">
+  <g partID="57471">
+   <g id="silkscreen">
+    <rect width="640.568" height="371.415" stroke="black" stroke-width="0.576" fill="none" y="0.288" x="0.288"/>
+   </g>
+  </g>
+  <g partID="57470">
+   <g id="board">
+    <rect fill-opacity="0.5" width="640.568" height="371.415" stroke="black" stroke-width="0.5" fill="none" id="boardoutline" y="0.288" x="0.288"/>
+   </g>
+  </g>
+  <g partID="57471">
+   <g id="silkscreen">
+    <rect width="640.568" height="371.415" stroke="black" stroke-width="0.576" fill="none" y="0.288" x="0.288"/>
+   </g>
+  </g>
+ </g>
+</svg>
