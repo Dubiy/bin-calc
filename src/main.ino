@@ -51,30 +51,48 @@ byte byte1 = 0,
      byte2 = 0;
 byte operation = 0;
 
+
 void loop() {
   byte1 = read_shift_regs();
 
   Serial.println("\nThe incoming values of the shift register are: ");
   Serial.print("BITS : ");
+  Serial.print(byte1);
+  Serial.print(" ");
   print_byte(byte1);
 
   delay(300);
 
-    digitalWrite(SHIFT_OUT_LATCH, LOW);
-
-    shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, 255);
-    shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, 255);
-
-    digitalWrite(SHIFT_OUT_LATCH, HIGH);
-    delay(300);
-
-digitalWrite(SHIFT_OUT_LATCH, LOW);
-
-shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, 0);
-shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, 0);
-digitalWrite(SHIFT_OUT_LATCH, HIGH);
 
 
+    // for (int i = 0; i < 256; i++) {
+
+      // digitalWrite(SHIFT_OUT_LATCH, LOW);
+      shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, byte1);
+      shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, byte1);
+      // shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, i);
+      // digitalWrite(SHIFT_OUT_LATCH, HIGH);
+      // delay(300);
+
+      // digitalWrite(SHIFT_OUT_LATCH, LOW);
+      // shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, 0);
+      // shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, 0);
+      // // shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, i);
+      // digitalWrite(SHIFT_OUT_LATCH, HIGH);
+      // delay(500);
+    // }
+
+
+//
+//     delay(300);
+//
+// digitalWrite(SHIFT_OUT_LATCH, LOW);
+//
+// shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, 0);
+// shiftOut(SHIFT_OUT_DATA, SHIFT_OUT_CLOCK, MSBFIRST, 0);
+// digitalWrite(SHIFT_OUT_LATCH, HIGH);
+//
+//
 
 
 
